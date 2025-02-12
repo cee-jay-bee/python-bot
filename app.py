@@ -13,7 +13,7 @@ def weather():
     api_key = '70e27adc27aa41afa2c25823241704'
 
     # Make a request to OpenWeatherMap API
-    url = f'http://api.weatherapi.com/v1/current.json?key={api_key}q={zip_code}&aqi=no'
+    url = f'http://api.weatherapi.com/v1/current.json?key={api_key}&q={zip_code}&aqi=no'
     response = requests.get(url)
     data = response.json()
 
